@@ -21,8 +21,8 @@
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  align-items: center;
-  padding: 30px 52px;
+  align-items: start;
+  padding: 30px 52px 185px;
 }
 
 .header__links-list {
@@ -67,7 +67,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 900px;
+  min-height: 757px;
   padding: 60px 52px;
   color: #fff;
   background: url(../images/cover.jpg) center / cover no-repeat;
@@ -76,7 +76,7 @@
 .cover__title {
   position: relative;
   z-index: 2;
-  margin-top: 270px;
+  margin-top: 127px;
   font-size: 100px;
   line-height: 1.35;
   font-weight: bold;
