@@ -9,7 +9,7 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .address {
@@ -136,7 +136,7 @@
 }
 
 .lots__heading {
-  margin-bottom: 48px;
+  margin-bottom: 88px;
   font-size: 54px;
   text-transform: uppercase;
 }
@@ -186,7 +186,7 @@
   position: relative;
   z-index: 2;
   margin-bottom: 22px;
-  font-size: 27px;
+  font-size: 25px;
   text-transform: uppercase;
 }
 
@@ -194,7 +194,7 @@
   position: relative;
   z-index: 2;
   margin-top: auto;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -251,7 +251,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
-  padding: 70px 52px;
+  padding: 100px 52px 130px;
 }
 
 .footer__address {
