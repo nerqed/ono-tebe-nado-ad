@@ -81,7 +81,6 @@
   line-height: 1.35;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 4px;
 }
 
 .aligned-text {
@@ -94,6 +93,17 @@
 
 .aligned-text_right {
   text-align: right;
+}
+
+/* Расширенный межбуквенный интервал в заголовке-акценте */
+.letter-spacing-extended {
+  letter-spacing: 4px;
+}
+
+/* Обнуляет хвостовой интервал у последней буквы, чтобы строка
+   вставала вплотную к краю */
+.no-letter-spacing {
+  letter-spacing: 0;
 }
 
 .cover__description {
