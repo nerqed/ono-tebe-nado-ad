@@ -210,26 +210,26 @@
   display: grid;
   grid-template-columns: calc((100% - 50px) / 3) 1fr;
   gap: 25px;
-  padding: 95px 24px;
+  padding: 66px 24px 95px;
 }
 
 .about__logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 280px;
-  height: 280px;
+  width: 238px;
+  height: 238px;
   margin: 0 auto;
   background-color: #000;
   border-radius: 50%;
 }
 
 .about__logo-image {
-  width: 165px;
+  width: 140px;
 }
 
 .about__title {
-  margin-top: 85px;
+  margin-top: 87px;
   margin-bottom: 40px;
   font-size: 54px;
   text-transform: uppercase;
@@ -251,7 +251,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
-  padding: 100px 24px 94px;
+  padding: 100px 24px 121px;
 }
 
 .footer__address {
