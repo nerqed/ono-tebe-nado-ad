@@ -104,7 +104,7 @@
   justify-content: space-between;
   gap: 30px;
   margin-top: auto;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .cover__description-text {
@@ -194,8 +194,8 @@
   position: relative;
   z-index: 2;
   margin-top: auto;
-  font-size: 16px;
-  line-height: 1.4;
+  font-size: 17px;
+  line-height: 1.45;
 }
 
 .lots__look-more-link {
