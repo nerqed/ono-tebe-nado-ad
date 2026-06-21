@@ -1,1 +1,287 @@
-/* место для вашего кода */
+/* ============================================================
+   Оно тебе надо — локальные стили проекта
+   ============================================================ */
+
+/* ----- Переиспользуемые элементы ------------------------------------ */
+
+/* Полупрозрачный оверлей поверх фоновой картинки (обложка и карточки) */
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.address {
+  font-style: normal;
+}
+
+/* ----- Шапка (Шаг 4) ------------------------------------------------ */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 30px 52px;
+}
+
+.header__links-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.header__link:hover {
+  text-decoration: underline;
+}
+
+.header__link_active {
+  font-weight: bold;
+}
+
+.header__logo {
+  display: block;
+  width: 60px;
+}
+
+.header__address {
+  justify-self: end;
+  max-width: 220px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* ----- Обложка (Шаг 5) --------------------------------------------- */
+
+.cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 640px;
+  padding: 52px;
+  color: #fff;
+  background: url(../images/cover.jpg) center / cover no-repeat;
+}
+
+.cover__title {
+  position: relative;
+  z-index: 2;
+  font-size: 100px;
+  line-height: 1.2;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.cover__description {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.cover__description-text {
+  max-width: 560px;
+  text-transform: uppercase;
+  word-spacing: 12px;
+  letter-spacing: 1px;
+}
+
+.bet-button {
+  flex-shrink: 0;
+  padding: 20px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.bet-button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ----- Лоты (Шаг 6) ------------------------------------------------- */
+
+.lots {
+  padding: 70px 52px;
+}
+
+.lots__heading {
+  margin-bottom: 36px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+}
+
+.lots__card-list-item {
+  flex: 0 0 calc((100% - 60px) / 3);
+  min-height: 360px;
+}
+
+.card-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 26px;
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card__title {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 16px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.lots__look-more-link {
+  display: inline-block;
+  margin-top: 30px;
+  text-transform: lowercase;
+}
+
+/* ----- Об аукционе (Шаг 7) ----------------------------------------- */
+
+.about {
+  display: grid;
+  grid-template-columns: calc((100% - 60px) / 3) 1fr;
+  gap: 30px;
+  padding: 70px 52px;
+}
+
+.about__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.about__logo-image {
+  width: 120px;
+}
+
+.about__title {
+  margin-top: 76px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__text p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.about__text p:last-child {
+  margin-bottom: 0;
+}
+
+/* ----- Подвал (Шаг 8) ----------------------------------------------- */
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  padding: 50px 52px;
+}
+
+.footer__address {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.footer__menu-list {
+  list-style: none;
+  text-align: center;
+}
+
+.footer__menu-list-item {
+  margin-bottom: 10px;
+}
+
+.footer__menu-link {
+  text-transform: lowercase;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  list-style: none;
+}
+
+.footer__social-link {
+  display: block;
+  width: 30px;
+}
