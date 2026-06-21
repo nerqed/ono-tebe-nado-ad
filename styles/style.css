@@ -136,7 +136,7 @@
 }
 
 .lots__heading {
-  margin-bottom: 88px;
+  margin-bottom: 95px;
   font-size: 54px;
   text-transform: uppercase;
 }
@@ -194,7 +194,7 @@
   position: relative;
   z-index: 2;
   margin-top: auto;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.45;
 }
 
@@ -251,7 +251,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
-  padding: 100px 24px 130px;
+  padding: 100px 24px 94px;
 }
 
 .footer__address {
